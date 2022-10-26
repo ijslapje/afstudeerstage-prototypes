@@ -1,7 +1,21 @@
-const Jimp = require("jimp");
-const name = "Coole NFT";
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
-(async function(){
+const fs = require('fs');
+let name;
+
+fs.readFile('fakeAPI/hupber.json', (err, data) => {
+    if (err) throw err;
+    name = JSON.parse(data).firstname;
+    console.log(name);
+
+    generateIMG(name);
+});
+
+
+const Jimp = require("jimp");
+
+async function generateIMG(name){
     
     //Read the image
     const image = await Jimp.read("imagesTemplate/handpickedDiploma.png");
@@ -19,4 +33,5 @@ const name = "Coole NFT";
         //Save Text
         .write("imagesTemplate/edited-handpickedDiploma.png");
     });
-})();
+};
+
