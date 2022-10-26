@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Handpicked Learn To Earn",
+    "description":"Learn To Earn prototype voor de Handpicked Agencies leeromgeving",
+    "version":"1.0",
+    "content_scripts": [
+        {
+            "matches": ["https://handpickedagencies.hubper.co/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action":{
+        "default_popup": "popup.html",
+        "default_title": "A popup komt hier!"
+    },
+    "background":{
+        "page": "background.html",
+        "persistent": false
+    }
+}
