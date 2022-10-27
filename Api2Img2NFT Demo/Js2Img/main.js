@@ -2,20 +2,21 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
 const fs = require('fs');
-let name;
+let firstName;
+let lastName;
 
 fs.readFile('fakeAPI/hupber.json', (err, data) => {
     if (err) throw err;
-    name = JSON.parse(data).firstname;
-    console.log(name);
+    firstName = JSON.parse(data).firstname;
+    lastName = JSON.parse(data).lastname;
 
-    generateIMG(name);
+    generateIMG(firstName, lastName);
 });
 
 
 const Jimp = require("jimp");
 
-async function generateIMG(name){
+async function generateIMG(firstName, lastName){
     
     //Read the image
     const image = await Jimp.read("imagesTemplate/handpickedDiploma.png");
@@ -28,7 +29,7 @@ async function generateIMG(name){
             font, 
             50, //x
             350, //y
-            name //De text op de IMG
+            firstName +" "+ lastName //De text op de IMG
         )
         //Save Text
         .write("imagesTemplate/edited-handpickedDiploma.png");
