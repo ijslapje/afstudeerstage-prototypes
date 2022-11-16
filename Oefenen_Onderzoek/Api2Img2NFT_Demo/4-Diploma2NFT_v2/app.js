@@ -1,6 +1,8 @@
 import * as IPFS from 'ipfs-core'
 import { createRequire } from 'module';
 import { stringify } from 'querystring';
+import { ethers } from "ethers";
+
 const require = createRequire(import.meta.url);
 const fs = require('fs');
 
@@ -81,6 +83,7 @@ async function createMetadata(name, language, title, description, studytime) {
     console.info(cid)
     console.log(gateway.concat(cid.path))
 }
+
 
 
 
