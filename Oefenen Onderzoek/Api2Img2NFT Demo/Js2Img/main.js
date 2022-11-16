@@ -8,37 +8,47 @@ const fs = require('fs');
 
 //Maak variables aan die op diploma komen
 let firstName;
-let lastName;
+let title;
 
 //Leest de Json file op
 fs.readFile('fakeAPI/hupber.json', (err, data) => {
+    const jsonFile = JSON.parse(data);
     if (err) throw err;
 
-    //Zet de data van de Json om naar de bijhoordende variable
-    firstName = JSON.parse(data).firstname;
-    lastName = JSON.parse(data).lastname;
+    for(let i=0; i<jsonFile.length; i++){
+        if(jsonFile[i].registeredBy.firstname != "Hubper"){
+            //Zet de data van de Json om naar de bijhoordende variable
+            firstName = jsonFile[i].registeredBy.firstname;
+            title = jsonFile[i].title
+        }
+    }
+
 
     //Gebruik functie waar deze variables worden meegegeven
-    generateIMG(firstName, lastName);
+    generateIMG(firstName, title);
 });
 
 //Importeer Jimp
 const Jimp = require("jimp");
 
-async function generateIMG(firstName, lastName){
+async function generateIMG(firstName, title){
     
     //Leest de template image
     const image = await Jimp.read("imagesTemplate/handpickedDiploma.png");
 
     //Laad font in
-    Jimp.loadFont(Jimp.FONT_SANS_64_WHITE).then(font => {
+    Jimp.loadFont(Jimp.FONT_SANS_32_WHITE).then(font => {
         image
         //Voeg tekst toe aan image
         .print(
-            font, 
-            50, //x
-            350, //y
-            firstName +" "+ lastName //De text op de IMG
+            font,
+            190,
+            300,
+            firstName,
+            50,
+            (err, image, { x, y }) => {
+              image.print(font, x-190, y+30, title, 400);
+            }
         )
         //Slaat de image op tot een nieuwe image
         .write("imagesTemplate/edited-handpickedDiploma.png");

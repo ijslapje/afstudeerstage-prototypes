@@ -1,33 +1,800 @@
-{
-    "id": "1646c1ba-5257-4a4b-9bd2-20fe51192349",
-    "firstname": "Ian",
-    "middlename": "",
-    "lastname": "Robeerst",
-    "email": "irobeerst@handpickedagencies.com",
-    "registrationDate": "2022-08-29T09:32:03.075728",
-    "lastLogin": null,
-    "invitationSent": true,
-    "sendInvitation": true,
-    "corporateId": "irobeerst",
-    "costCenter": "",
+[
+  {
+    "activityRegistrationId": "04ccca0c-2bdc-47ef-93dd-3309428bc55a",
+    "activityId": "05cad38c-401e-4ee8-a495-95bb9f8bd0b3",
+    "title": "Onze missie",
+    "language": "DUTCH",
+    "system": "NONE",
+    "registered": "2022-08-29T09:32:11.775131",
+    "registeredBy": {
+      "id": "709a50c2-0bcd-4b2b-9894-92570712a197",
+      "firstname": "Hubper",
+      "middlename": "",
+      "lastname": ""
+    },
+    "unregistered": null,
+    "status": "Afgerond",
     "active": true,
-    "agreedToTerms": true,
-    "manager": false,
-    "selectedLanguage": "DUTCH",
-    "department": {
-      "id": "68d98c1c-aa04-4aec-b374-9e17de09fa28",
-      "name": "Handpicked Lab"
+    "firstUsed": "2022-08-29T11:41:57.842592",
+    "lastUsed": "2022-08-29T11:42:01.710397",
+    "expires": null,
+    "resitsTaken": null,
+    "data": null,
+    "activity": {
+      "id": "05cad38c-401e-4ee8-a495-95bb9f8bd0b3",
+      "title": "Onze missie",
+      "description": "Hoe willen wij bekend staan? Wat is onze missie?",
+      "type": "MICRO_LEARNING",
+      "system": "NONE",
+      "data": {
+        "hub": {
+          "estimatedStudyTime": {
+            "unit": "minutes",
+            "active": true,
+            "duration": 5
+          }
+        },
+        "imageId": "70c4d72c-00f2-4c76-9cb0-f67df66b462c",
+        "imageUrl": null,
+        "descriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Hoe willen wij bekend staan? Wat is onze missie?",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 49,
+            "type": "text",
+            "anchor": 49
+          }
+        }
+      },
+      "statusId": 1,
+      "relatedActivity": null
+    }
+  },
+  {
+    "activityRegistrationId": "72fff1a4-c42e-4ad3-9e67-ae1fd8143f05",
+    "activityId": "293ab9df-0164-4f06-b521-9ebefc6baa03",
+    "title": "Onze hubs",
+    "language": "DUTCH",
+    "system": "LEARN",
+    "registered": "2022-08-29T09:32:11.865153",
+    "registeredBy": {
+      "id": "709a50c2-0bcd-4b2b-9894-92570712a197",
+      "firstname": "Hubper",
+      "middlename": "",
+      "lastname": ""
     },
-    "company": {
-      "id": "63ffb99e-8ac5-4556-bec9-28c0bd0c4877",
-      "name": "Handpicked Agencies"
+    "unregistered": null,
+    "status": "Afgerond",
+    "active": true,
+    "firstUsed": "2022-08-29T11:42:56.798814",
+    "lastUsed": "2022-08-29T11:42:56.798814",
+    "expires": null,
+    "resitsTaken": null,
+    "data": null,
+    "activity": {
+      "id": "293ab9df-0164-4f06-b521-9ebefc6baa03",
+      "title": "Onze hubs",
+      "description": "Breda, Eindhoven, Rotterdam.. We zitten (bijna 😆) overal! \n\nCheck it out!",
+      "type": "E_LEARNING",
+      "system": "LEARN",
+      "data": {
+        "hub": {
+          "estimatedStudyTime": {
+            "unit": "minutes",
+            "active": true,
+            "duration": 3
+          }
+        },
+        "course": {
+          "bannerImagePosition": 0
+        },
+        "imageId": "67dc65fc-8126-4fae-b594-4340cae783ff",
+        "imageUrl": null,
+        "descriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Breda, Eindhoven, Rotterdam.. We zitten (bijna 😆) overal! ",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Check it out!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 75,
+            "type": "text",
+            "anchor": 75
+          }
+        },
+        "learnDescriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "We nemen je graag mee op tour 🚌",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Neem hier een kijkje in Breda, Eindhoven en Rotterdam.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Je kunt er uiteraard ook een dagje gaan werken, veel leuker nog 👊🏼 ",
+                    "type": "text"
+                  },
+                  {
+                    "type": "hard_break"
+                  },
+                  {
+                    "text": "Hoe je dat regelt? Kom je straks achter!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 159,
+            "type": "text",
+            "anchor": 159
+          }
+        }
+      },
+      "statusId": 1,
+      "relatedActivity": null
+    }
+  },
+  {
+    "activityRegistrationId": "e143bc4e-b4b0-4527-98cf-bc9c96af9bb9",
+    "activityId": "387fc548-2911-468e-8ec4-54f0c40390df",
+    "title": "Informatiebeveiliging",
+    "language": "DUTCH",
+    "system": "LEARN",
+    "registered": "2022-08-29T09:32:11.932898",
+    "registeredBy": {
+      "id": "709a50c2-0bcd-4b2b-9894-92570712a197",
+      "firstname": "Hubper",
+      "middlename": "",
+      "lastname": ""
     },
-    "functions": [
-      {
-        "id": "6ac5521f-778d-4a3b-b8f7-83abd0b6956c",
-        "name": "Stagiair"
-      }
-    ],
-    "teams": null
+    "unregistered": null,
+    "status": "Afgerond",
+    "active": true,
+    "firstUsed": "2022-08-29T11:46:56.88292",
+    "lastUsed": "2022-08-29T11:46:56.88292",
+    "expires": null,
+    "resitsTaken": null,
+    "data": null,
+    "activity": {
+      "id": "387fc548-2911-468e-8ec4-54f0c40390df",
+      "title": "Informatiebeveiliging",
+      "description": "Leer alles over data en privacyvraagstukken, hoe we onze informatie beschermen, wat we doen om de kans op beveiligingsincidenten en datalekken te verkleinen en hoe je deze moet melden.",
+      "type": "E_LEARNING",
+      "system": "LEARN",
+      "data": {
+        "hub": {
+          "estimatedStudyTime": {
+            "unit": "minutes",
+            "active": true,
+            "duration": 40
+          }
+        },
+        "course": {
+          "bannerImagePosition": 0
+        },
+        "imageId": "aff674c9-5380-4df2-abb0-131f6e8e80d1",
+        "imageUrl": null,
+        "descriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Leer alles over data en privacyvraagstukken, hoe we onze informatie beschermen, wat we doen om de kans op beveiligingsincidenten en datalekken te verkleinen en hoe je deze moet melden.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 184,
+            "type": "text",
+            "anchor": 184
+          }
+        },
+        "learnDescriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Welkom bij de e-learning 'Informatiebeveiliging'!",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Na deze e-learning weet je:",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "- bij wie je terecht kunt voor vragen over security, data en privacyvraagstukken;",
+                    "type": "text"
+                  },
+                  {
+                    "type": "hard_break"
+                  },
+                  {
+                    "text": "- hoe we onze informatie beschermen;",
+                    "type": "text"
+                  },
+                  {
+                    "type": "hard_break"
+                  },
+                  {
+                    "text": "- wat we doen om de kans op beveiligingsincidenten en datalekken te verkleinen;",
+                    "type": "text"
+                  },
+                  {
+                    "type": "hard_break"
+                  },
+                  {
+                    "text": "- hoe je een incident of datalek moet melden.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Veel plezier!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 305,
+            "type": "text",
+            "anchor": 305
+          }
+        }
+      },
+      "statusId": 1,
+      "relatedActivity": null
+    }
+  },
+  {
+    "activityRegistrationId": "fa95aabf-4a4d-4e07-8bcd-faf497debc08",
+    "activityId": "3d462e17-bf41-458b-a39a-5597e115ee3b",
+    "title": "Handpicked Agencies Onboarding | Intro",
+    "language": "DUTCH",
+    "system": "NONE",
+    "registered": "2022-08-29T09:32:11.745545",
+    "registeredBy": {
+      "id": "709a50c2-0bcd-4b2b-9894-92570712a197",
+      "firstname": "Hubper",
+      "middlename": "",
+      "lastname": ""
+    },
+    "unregistered": null,
+    "status": "Afgerond",
+    "active": true,
+    "firstUsed": "2022-08-29T11:41:38.678869",
+    "lastUsed": "2022-08-29T11:41:57.683714",
+    "expires": null,
+    "resitsTaken": null,
+    "data": null,
+    "activity": {
+      "id": "3d462e17-bf41-458b-a39a-5597e115ee3b",
+      "title": "Handpicked Agencies Onboarding | Intro",
+      "description": "",
+      "type": "MICRO_LEARNING",
+      "system": "NONE",
+      "data": {
+        "hub": {
+          "estimatedStudyTime": {
+            "unit": "minutes",
+            "active": true,
+            "duration": 1
+          }
+        },
+        "imageId": "f2edebfd-2172-4506-9362-6c8f0452ee07",
+        "imageUrl": null,
+        "descriptionRich": {
+          "doc": {
+            "type": "doc"
+          },
+          "selection": {
+            "head": 0,
+            "type": "text",
+            "anchor": 0
+          }
+        }
+      },
+      "statusId": 1,
+      "relatedActivity": null
+    }
+  },
+  {
+    "activityRegistrationId": "575cf870-7aae-454b-a61c-11127ff7f8b6",
+    "activityId": "5923cfa2-c016-4d71-9130-432c39b645ac",
+    "title": "Handpicked Agencies Onboarding | The End..",
+    "language": "DUTCH",
+    "system": "NONE",
+    "registered": "2022-08-29T09:32:11.977494",
+    "registeredBy": {
+      "id": "709a50c2-0bcd-4b2b-9894-92570712a197",
+      "firstname": "Hubper",
+      "middlename": "",
+      "lastname": ""
+    },
+    "unregistered": null,
+    "status": "Afgerond",
+    "active": true,
+    "firstUsed": "2022-08-29T11:57:01.390688",
+    "lastUsed": "2022-08-29T11:57:06.543484",
+    "expires": null,
+    "resitsTaken": null,
+    "data": null,
+    "activity": {
+      "id": "5923cfa2-c016-4d71-9130-432c39b645ac",
+      "title": "Handpicked Agencies Onboarding | The End..",
+      "description": "",
+      "type": "MICRO_LEARNING",
+      "system": "NONE",
+      "data": {
+        "hub": {
+          "estimatedStudyTime": {
+            "unit": "minutes",
+            "active": true,
+            "duration": 1
+          }
+        },
+        "imageId": "2471522c-d634-4cf4-a8c5-98aa74007589",
+        "imageUrl": null,
+        "descriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "image",
+                "attrs": {
+                  "alt": null,
+                  "src": "/api/assets/content/fbfc3177-908c-4a8c-b899-9af557c2499c/default",
+                  "align": "center",
+                  "float": false,
+                  "width": "60%",
+                  "variant": "custom"
+                }
+              }
+            ]
+          },
+          "selection": {
+            "type": "node",
+            "anchor": 0
+          }
+        }
+      },
+      "statusId": 1,
+      "relatedActivity": null
+    }
+  },
+  {
+    "activityRegistrationId": "b70a2a88-4e44-4b16-809f-312e614dc4c2",
+    "activityId": "5e634f73-b309-4e19-945f-f8c99101b1f1",
+    "title": "Hoe werkt jouw online leeromgeving?",
+    "language": "DUTCH",
+    "system": "NONE",
+    "registered": "2022-09-16T13:08:10.801525",
+    "registeredBy": {
+      "id": "1646c1ba-5257-4a4b-9bd2-20fe51192349",
+      "firstname": "Ian",
+      "middlename": "",
+      "lastname": "Robeerst"
+    },
+    "unregistered": null,
+    "status": "Afgerond",
+    "active": true,
+    "firstUsed": "2022-09-16T13:08:10.866163",
+    "lastUsed": "2022-09-16T13:08:10.938244",
+    "expires": null,
+    "resitsTaken": null,
+    "data": null,
+    "activity": {
+      "id": "5e634f73-b309-4e19-945f-f8c99101b1f1",
+      "title": "Hoe werkt jouw online leeromgeving?",
+      "description": "Hoe werkt deze online leeromgeving precies? Waar vind ik wat? Antwoord op deze vragen vind je in deze microlearning!",
+      "type": "MICRO_LEARNING",
+      "system": "NONE",
+      "data": {
+        "hub": {
+          "estimatedStudyTime": {
+            "unit": "minutes",
+            "active": true,
+            "duration": 5
+          }
+        },
+        "imageId": "15529429-6f41-48d8-ad38-0a45c549daa5",
+        "imageUrl": null,
+        "descriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Hoe werkt deze online leeromgeving precies? Waar vind ik wat? Antwoord op deze vragen vind je in deze microlearning!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 117,
+            "type": "text",
+            "anchor": 117
+          }
+        }
+      },
+      "statusId": 1,
+      "relatedActivity": null
+    }
+  },
+  {
+    "activityRegistrationId": "127605dc-afd2-431b-a2ab-af309268db53",
+    "activityId": "ab9ce7de-b303-4573-b0a3-6baf036a6653",
+    "title": "Handpicked High Five",
+    "language": "DUTCH",
+    "system": "NONE",
+    "registered": "2022-08-29T09:32:11.7978",
+    "registeredBy": {
+      "id": "709a50c2-0bcd-4b2b-9894-92570712a197",
+      "firstname": "Hubper",
+      "middlename": "",
+      "lastname": ""
+    },
+    "unregistered": null,
+    "status": "Afgerond",
+    "active": true,
+    "firstUsed": "2022-08-29T11:42:01.871274",
+    "lastUsed": "2022-08-29T11:42:06.032159",
+    "expires": null,
+    "resitsTaken": null,
+    "data": null,
+    "activity": {
+      "id": "ab9ce7de-b303-4573-b0a3-6baf036a6653",
+      "title": "Handpicked High Five",
+      "description": "Check hier onze Handpicked High Five!",
+      "type": "MICRO_LEARNING",
+      "system": "NONE",
+      "data": {
+        "hub": {
+          "estimatedStudyTime": {
+            "unit": "minutes",
+            "active": true,
+            "duration": 10
+          }
+        },
+        "imageId": "b9028c2e-600e-4a04-ba35-febdd239643f",
+        "imageUrl": null,
+        "descriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Check hier onze Handpicked High Five!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 38,
+            "type": "text",
+            "anchor": 38
+          }
+        }
+      },
+      "statusId": 1,
+      "relatedActivity": null
+    }
+  },
+  {
+    "activityRegistrationId": "5148c52f-4f25-4657-8566-631e91a73d2e",
+    "activityId": "d94aa012-8e9c-45f6-aae1-ebc6012a1a03",
+    "title": "Onze agencies",
+    "language": "DUTCH",
+    "system": "LEARN",
+    "registered": "2022-08-29T09:32:11.820732",
+    "registeredBy": {
+      "id": "709a50c2-0bcd-4b2b-9894-92570712a197",
+      "firstname": "Hubper",
+      "middlename": "",
+      "lastname": ""
+    },
+    "unregistered": null,
+    "status": "Afgerond",
+    "active": true,
+    "firstUsed": "2022-08-29T11:42:06.293368",
+    "lastUsed": "2022-08-29T11:42:06.293368",
+    "expires": null,
+    "resitsTaken": null,
+    "data": null,
+    "activity": {
+      "id": "d94aa012-8e9c-45f6-aae1-ebc6012a1a03",
+      "title": "Onze agencies",
+      "description": "Welke agencies vallen er onder Handpicked? En wat doen zij dan precies? In deze E-learning leer je hier meer over!",
+      "type": "E_LEARNING",
+      "system": "LEARN",
+      "data": {
+        "hub": {
+          "estimatedStudyTime": {
+            "unit": "minutes",
+            "active": true,
+            "duration": 20
+          }
+        },
+        "course": {
+          "bannerImagePosition": 0
+        },
+        "imageId": "545ce869-e0f1-425b-8a64-f632c934ff0e",
+        "imageUrl": null,
+        "descriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Welke agencies vallen er onder Handpicked? En wat doen zij dan precies? In deze E-learning leer je hier meer over!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 115,
+            "type": "text",
+            "anchor": 115
+          }
+        },
+        "learnDescriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "In deze e-learning nemen we je mee langs onze agencies. Teamleden van de agencies vertellen jou graag kort wat de agency precies doet!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 135,
+            "type": "text",
+            "anchor": 135
+          }
+        }
+      },
+      "statusId": 1,
+      "relatedActivity": null
+    }
+  },
+  {
+    "activityRegistrationId": "8d383a12-148e-441d-82fd-c329f86d0947",
+    "activityId": "ef32d115-5793-4291-ab7f-070de9f53153",
+    "title": "Interne communicatie",
+    "language": "DUTCH",
+    "system": "NONE",
+    "registered": "2022-08-29T09:32:11.917963",
+    "registeredBy": {
+      "id": "709a50c2-0bcd-4b2b-9894-92570712a197",
+      "firstname": "Hubper",
+      "middlename": "",
+      "lastname": ""
+    },
+    "unregistered": null,
+    "status": "Afgerond",
+    "active": true,
+    "firstUsed": "2022-08-29T11:43:49.229322",
+    "lastUsed": "2022-08-29T11:46:56.746373",
+    "expires": null,
+    "resitsTaken": null,
+    "data": null,
+    "activity": {
+      "id": "ef32d115-5793-4291-ab7f-070de9f53153",
+      "title": "Interne communicatie",
+      "description": "Hoe werkt de interne communicatie binnen de groep? Je leert het hier!",
+      "type": "MICRO_LEARNING",
+      "system": "NONE",
+      "data": {
+        "hub": {
+          "estimatedStudyTime": {
+            "unit": "minutes",
+            "active": true,
+            "duration": 5
+          }
+        },
+        "imageId": "e8aa6b9c-44ae-4bf0-a82c-b7afaa764a38",
+        "imageUrl": null,
+        "descriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Hoe werkt de interne communicatie binnen de groep? Je leert het hier!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 70,
+            "type": "text",
+            "anchor": 70
+          }
+        }
+      },
+      "statusId": 1,
+      "relatedActivity": null
+    }
+  },
+  {
+    "activityRegistrationId": "ba06bccf-c827-4f26-89ce-a244151a1695",
+    "activityId": "f120ff05-78e6-478d-b947-6ab9c935493c",
+    "title": "Handpicked Services",
+    "language": "DUTCH",
+    "system": "LEARN",
+    "registered": "2022-08-29T09:32:11.889216",
+    "registeredBy": {
+      "id": "709a50c2-0bcd-4b2b-9894-92570712a197",
+      "firstname": "Hubper",
+      "middlename": "",
+      "lastname": ""
+    },
+    "unregistered": null,
+    "status": "Afgerond",
+    "active": true,
+    "firstUsed": "2022-08-29T11:43:24.075308",
+    "lastUsed": "2022-08-29T11:43:24.075308",
+    "expires": null,
+    "resitsTaken": null,
+    "data": null,
+    "activity": {
+      "id": "f120ff05-78e6-478d-b947-6ab9c935493c",
+      "title": "Handpicked Services",
+      "description": "Het Handpicked Services team bestaat uit een groep specialisten die er zijn ter ondersteuning van de agencies en hun teamleden. Meer weten? Check it out!",
+      "type": "E_LEARNING",
+      "system": "LEARN",
+      "data": {
+        "hub": {
+          "estimatedStudyTime": {
+            "unit": "minutes",
+            "active": true,
+            "duration": 16
+          }
+        },
+        "course": {
+          "bannerImagePosition": 0
+        },
+        "imageId": "975577c6-c0de-4e05-83d7-c09cddc50411",
+        "imageUrl": null,
+        "descriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Het Handpicked Services team bestaat uit een groep specialisten die er zijn ter ondersteuning van de agencies en hun teamleden. Meer weten? Check it out!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 6,
+            "type": "text",
+            "anchor": 6
+          }
+        },
+        "learnDescriptionRich": {
+          "doc": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "In deze e-learning leer je het Handpicked Services team kennen!",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "selection": {
+            "head": 64,
+            "type": "text",
+            "anchor": 64
+          }
+        }
+      },
+      "statusId": 1,
+      "relatedActivity": null
+    }
   }
-  
+]
