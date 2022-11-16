@@ -10,11 +10,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.0",
     "ipfs-core": "^0.17.0",
     "jimp": "^0.16.2"
-  },
-  "devDependencies": {
-    "hardhat": "^2.12.2"
   }
 }
