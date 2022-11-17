@@ -2,15 +2,15 @@
 //$ npm install ipfs-core
 //$ npm install --save ethers
 //$ npm install --save jimp
-
 import * as IPFS from 'ipfs-core'
-import { createRequire } from 'module';
-import { stringify } from 'querystring';
-import { ethers } from "ethers";
-const Jimp = require("jimp");
+import { createRequire } from 'module'
+import { stringify } from 'querystring'
+import { ContractFactory, ethers } from "ethers"
+
 
 const require = createRequire(import.meta.url);
 const fs = require('fs');
+const Jimp = require("jimp");
 
 //Maak variables aan die op diploma komen
 let userFirstName
@@ -18,15 +18,18 @@ let cursusLanguage
 let cursusTitle
 let cursusDescription
 let cursusStudytime
-let picturePath = './assets/diplomaIMG'
+let picturePath
 
 //Leest image in dimploma path, zet in een for loop als er meer files zijn
-let file = fs.readdirSync(picturePath)
-let buffer = fs.readFileSync(`${picturePath}/${file}`)
+let file
+let buffer
 
 //Gateway zetten voor ipfs
 let gateway = "https://ipfs.io/ipfs/"
-let imageGateway = "https://ipfs.cloudflare.com/ipfs/"
+let imageGateway = "https://gateway.pinata.cloud/ipfs/"
+
+//Ipfs Link Public
+let ipfsLink
 
 
 //Leest de Json file , dit is de "/v1/users/{id}/registrations" API call
@@ -82,6 +85,13 @@ async function createMetadata(name, language, title, description, studytime) {
     //Maakt lokaal een ipfs aan, dit zou dan straks een url zijn buiten lokaal om
     const ipfs = await IPFS.create({ repo: 'ok' + Math.random() })
 
+    //Zet plek van diploma
+    picturePath = './assets/diplomaIMG'
+
+    //Leest image in dimploma path, zet in een for loop als er meer files zijn
+    file = fs.readdirSync(picturePath)
+    buffer = fs.readFileSync(`${picturePath}/${file}`)
+
     //Zet diploma img op de ipfs
     let { cid } = await ipfs.add(buffer)
 
@@ -91,16 +101,15 @@ async function createMetadata(name, language, title, description, studytime) {
     //Zet json file op ipfs
     cid = await ipfs.add(metadata)
 
+
     //Zet link naar de ipfs om in een variable
-    let ipfsLink = gateway.concat(cid.path)
-   
+    ipfsLink = gateway.concat(cid.path)
+
+
     //Console log cid info
     console.info(cid)
 
+    
     //Console log link naar de IPFS
     console.log(ipfsLink)
 }
-
-
-
-
