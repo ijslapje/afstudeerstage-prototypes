@@ -52,8 +52,8 @@
     "Type": "dhtclient"
   },
   "Identity": {
-    "PeerID": "12D3KooWBTcfRcouQM3T1XSgor52Pxb1uUUfNLFJ1Y5CE4QxRPDj",
-    "PrivKey": "CAESQLntbwVWl8gd/Oln4EOkbOytfm2ius3OdHDQAE7FitkxGGaQ2wDPng9Wfb6k/KmBI/8Rb/uejAk0EYxpNyTgcco="
+    "PeerID": "12D3KooWQUC4EDvY7wcn2hJF8RKNTUoUf6oggrkbic6AHFq98bTf",
+    "PrivKey": "CAESQGbmQNmapAovsXieiubjxrnwuCC0695ZimFhB05rbEUc2bRA75YDWEt0O4ws7NAeAtzYJRUIwDtQe9NQD8j2cOo="
   },
   "Datastore": {
     "Spec": {
@@ -87,7 +87,7 @@
     "DEK": {
       "keyLength": 64,
       "iterationCount": 10000,
-      "salt": "AK5QFsF19xG7CUXcxbOc4cVC",
+      "salt": "IAquuReZivwrGAdt7w3DNo06",
       "hash": "sha2-512"
     }
   }
