@@ -6,11 +6,14 @@ import * as IPFS from 'ipfs-core'
 import { createRequire } from 'module'
 import { stringify } from 'querystring'
 import { ContractFactory, ethers } from "ethers"
+// import ABI from './scBestanden/abi.json'
+// import BYTECODE from './scBestanden/bytecode.json'
 
-
-const require = createRequire(import.meta.url);
-const fs = require('fs');
-const Jimp = require("jimp");
+const require = createRequire(import.meta.url)
+const fs = require('fs')
+const Jimp = require("jimp")
+const ABI = require('./scBestanden/abi.json')
+const BYTECODE = require('./scBestanden/bytecode.json')
 
 //Maak variables aan die op diploma komen
 let userFirstName
