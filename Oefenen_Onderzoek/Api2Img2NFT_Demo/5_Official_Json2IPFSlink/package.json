@@ -1,18 +1,16 @@
 {
-  "name": "4-diploma2nft_v2",
+  "name": "5_official_json2ipfslink",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "ethers": "^5.7.2",
-    "fs-extra": "^10.1.0",
     "ipfs-core": "^0.17.0",
     "jimp": "^0.16.2"
   }
