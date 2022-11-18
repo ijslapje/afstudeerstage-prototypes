@@ -1,13 +1,12 @@
-import { createMetadata } from "./app.js"
-import * as fs from "fs";
+const fs = require('fs')
+const { createMeta } = require("./app.js")
 
-const ipfs = await createMetadata()
 
-let link = JSON.stringify(ipfs)
+let link = JSON.stringify(createMeta)
 
 
 fs.writeFileSync("ipfsJSON.json", link, 'utf8');
 console.log(link)
 
-//export default link
+
 

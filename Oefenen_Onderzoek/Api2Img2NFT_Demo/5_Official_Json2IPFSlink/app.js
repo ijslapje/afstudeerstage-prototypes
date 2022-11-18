@@ -2,14 +2,12 @@
 //$ npm install ipfs-core
 //$ npm install --save ethers
 //$ npm install --save jimp
-import * as IPFS from 'ipfs-core'
-import { createRequire } from 'module'
-import { stringify } from 'querystring'
-import { ContractFactory, ethers } from "ethers"
-const require = createRequire(import.meta.url)
+// import { createRequire } from 'module'
+// import { stringify } from 'querystring'
+// const require = createRequire(import.meta.url)
+const IPFS = require('ipfs-mini')
 const fs = require('fs')
 const Jimp = require("jimp")
-//const hre = require("hardhat");
 
 //Maak variables aan die op diploma komen
 let userFirstName
@@ -82,7 +80,7 @@ async function generateIMG(firstName, title) {
 }
 
 //Functie zet diploma img en metadata.json op een ipfs
-export async function createMetadata() {
+const createMeta = async function createMetadata() {
     const declaredObj = await declareJson();
 
     let name = declaredObj[0]
@@ -92,7 +90,7 @@ export async function createMetadata() {
     let studytime = declaredObj[4]
 
     //Maakt lokaal een ipfs aan, dit zou dan straks een url zijn buiten lokaal om
-    const ipfs = await IPFS.create({ repo: 'ok' + Math.random() })
+    const ipfs = new IPFS({ repo: 'ok' + Math.random() })
 
     //Zet plek van diploma
     picturePath = './assets/diplomaIMG'
@@ -118,4 +116,10 @@ export async function createMetadata() {
     console.info(cid)
 
     return ipfsLink
+}
+
+console.log(createMeta())
+
+module.exports = {
+    createMeta
 }
