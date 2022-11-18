@@ -6,13 +6,13 @@ import * as IPFS from 'ipfs-core'
 import { createRequire } from 'module'
 import { stringify } from 'querystring'
 import { ContractFactory, ethers } from "ethers"
-// import ABI from './scBestanden/abi.json'
-// import BYTECODE from './scBestanden/bytecode.json'
-
 const require = createRequire(import.meta.url)
 const fs = require('fs')
 const Jimp = require("jimp")
-const ABI = require('./scBestanden/abi.json')
+
+//Import ABI and Bytecode
+const getABI = require('./scBestanden/abi.json')
+const ABI = getABI.items
 const BYTECODE = require('./scBestanden/bytecode.json')
 
 //Maak variables aan die op diploma komen
@@ -57,7 +57,7 @@ fs.readFile('./assets/apiData.json', (err, data) => {
 
     //Maakt de ipfs link voor de smart contract met daarin metadata.json
     createMetadata(userFirstName, cursusLanguage, cursusTitle, cursusDescription, cursusStudytime + " min")
-});
+})
 
 //Functie maak diploma image
 async function generateIMG(firstName, title) {
@@ -80,8 +80,8 @@ async function generateIMG(firstName, title) {
             )
             //Slaat de image op tot een nieuwe image, voor meer diplomas zou het nummer van 1 steeds hoger worden
             .write('./assets/diplomaIMG/1.png');
-    });
-};
+    })
+}
 
 //Functie zet diploma img en metadata.json op een ipfs
 async function createMetadata(name, language, title, description, studytime) {
@@ -115,4 +115,6 @@ async function createMetadata(name, language, title, description, studytime) {
     
     //Console log link naar de IPFS
     console.log(ipfsLink)
+
+    
 }
