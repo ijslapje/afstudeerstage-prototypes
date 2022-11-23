@@ -4,12 +4,9 @@
 //$ npm install --save jimp
 import * as IPFS from 'ipfs-core'
 import { createRequire } from 'module'
-import { stringify } from 'querystring'
-import { ContractFactory, ethers } from "ethers"
 const require = createRequire(import.meta.url)
 const fs = require('fs')
-const Jimp = require("jimp")
-//const hre = require("hardhat");
+const Jimp = require('jimp')
 
 //Maak variables aan die op diploma komen
 let userFirstName
