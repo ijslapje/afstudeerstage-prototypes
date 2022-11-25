@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
     "ethers": "^5.7.2",
     "ipfs-core": "^0.17.0",
     "jimp": "^0.16.2"

@@ -1,19 +1,14 @@
 import { createMetadata } from "./app.js"
-import * as fs from "fs";
 import {spawn} from "node:child_process";
 
 const ipfs = await createMetadata()
 
 let link = JSON.stringify(ipfs)
 
-
-fs.writeFileSync("ipfsJSON.json", link, 'utf8');
-console.log(link)
-
-
-const contract = spawn('node', ['smart-contract/contract.js'], {
+const contract = spawn('node', ['smart-contract/contractDeploy.js'], {
     env: {
-        'IPFSLINK': link
+        'IPFSLINK': link,
+        'USERADRESS': 0x1E9884c50F9C557c826dB6935eB719ac8d38A953
     }
 })
 contract.stdout.on('data', (data) => console.log(`${data}`));
