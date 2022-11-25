@@ -8,6 +8,7 @@ function App() {
       <getWallet userTokens = {tokens} />
       <button>Connect Wallet</button>
       <div>0 Handpicked Tokens</div>
+      <div>Images</div>
     </>
   )
 }

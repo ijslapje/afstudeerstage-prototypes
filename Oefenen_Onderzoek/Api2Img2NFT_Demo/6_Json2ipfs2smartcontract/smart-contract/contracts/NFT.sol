@@ -9,6 +9,8 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 contract NFT is ERC721, Ownable {
     using Strings for uint256;
 
+    address public pKey;
+
     uint public constant MAX_TOKENS = 10000;
     uint private constant TOKENS_RESERVED = 10;
     uint public price = 100000000000000000;
@@ -21,8 +23,9 @@ contract NFT is ERC721, Ownable {
     string public baseUri;
     string public baseExtesion = ".json";
 
-    constructor(string memory ipfsLink) ERC721("Handpicked Diploma", "HPD") {
+    constructor(address key, string memory ipfsLink) ERC721("Handpicked Diploma", "HPD") {
         baseUri = ipfsLink;
+        pKey = key;
         for(uint256 i = 1; i <= TOKENS_RESERVED; ++i) {
             _safeMint(msg.sender, i);
         }
@@ -62,8 +65,8 @@ contract NFT is ERC721, Ownable {
         uint256 balance = address(this).balance;
         uint256 balanceOne = balance * 70 / 100;
         uint256 balanceTwo = balance * 30 / 100;
-        ( bool transferOne, ) = payable(0x1E9884c50F9C557c826dB6935eB719ac8d38A953).call{value: balanceOne}("");
-        ( bool transferTwo, ) = payable(0x1E9884c50F9C557c826dB6935eB719ac8d38A953).call{value: balanceTwo}("");
+        ( bool transferOne, ) = payable(pKey).call{value: balanceOne}("");
+        ( bool transferTwo, ) = payable(pKey).call{value: balanceTwo}("");
         require(transferOne && transferTwo, "Transfer failed.");
     }
 }

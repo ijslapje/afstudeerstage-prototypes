@@ -1,7 +1,7 @@
 {
   "name": "6_json2ipfs2smartcontract",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.",
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
@@ -10,11 +10,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "ethers": "^5.7.2",
     "ipfs-core": "^0.17.0",
     "jimp": "^0.16.2"
   },
   "devDependencies": {
     "hardhat": "^2.12.2"
+  },
+  "directories": {
+    "test": "test"
   }
 }
