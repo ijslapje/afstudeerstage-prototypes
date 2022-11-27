@@ -26,7 +26,7 @@ import express from 'express';
 
 //Set localserver
 const app = express();
-const port = 3000;
+const port = 8000;
 
 //Roep ipfs en token aan
 const ipfs = await createMetadata()
