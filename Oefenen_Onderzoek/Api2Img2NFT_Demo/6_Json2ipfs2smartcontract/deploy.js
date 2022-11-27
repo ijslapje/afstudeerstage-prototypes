@@ -11,6 +11,7 @@
 
 //TO RUN
 //In een terminal $cd smart-contract 
+//$npx hardhat compile
 //$npx hardhat node
 //Verander de account en private key naar de geliste blockchain
 //Open andere terminal

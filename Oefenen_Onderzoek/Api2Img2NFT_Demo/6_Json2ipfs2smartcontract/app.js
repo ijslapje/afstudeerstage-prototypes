@@ -1,6 +1,5 @@
 //Import Librarys
 //$ npm install ipfs-core
-//$ npm install --save ethers
 //$ npm install --save jimp
 import * as IPFS from 'ipfs-core'
 import { createRequire } from 'module'
