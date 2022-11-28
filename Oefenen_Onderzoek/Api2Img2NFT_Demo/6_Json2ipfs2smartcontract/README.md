@@ -1,13 +1,36 @@
-# Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
-Try running some of the following tasks:
 
+# Handpicked Learn 2 Earn backend
+
+Executeer de volgende commands om het programma te laten runnen
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
+npm install
+npm i ethers
+npm i jimp
+npm i ipfs-core
+npm i express
+```
+Vervolgens:
+```shell
+cd ./smart-contract
+npm install
+npm i --save-dev hardhat
+npm i @openzeppelin/contracts
+npm i @nomicfoundation/hardhat-toolbox
+```
+
+Om het te laten runnen:
+
+In terminal 1:
+```shell
+cd ./smart-contract
 npx hardhat node
-npx hardhat run scripts/deploy.js
+(Verander als dit moet de account private en public key naar de geliste blockchain)
+```
+
+In terminal 2:
+```shell
+node deploy.js
+Open localhost:8000
 ```
