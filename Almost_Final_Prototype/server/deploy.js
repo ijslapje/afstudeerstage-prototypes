@@ -15,13 +15,14 @@
 //Verander de account private en public key naar de geliste blockchain
 //Open andere terminal
 //node deploy.js
-//Open localhost:3000
+//Open localhost:8000
 
 //Import benodigde librarys
 import { createMetadata } from "./app.js"
 import { declareTokens } from "./calTokens.js";
 import { spawn } from "node:child_process";
 import express from 'express';
+import cors from 'cors';
 
 //Set localserver
 const app = express();
@@ -30,15 +31,19 @@ const port = 8000;
 //Roep ipfs en token aan
 const ipfs = await createMetadata()
 const tokens = await declareTokens()
-let link = JSON.stringify(ipfs)
+
+let link = JSON.stringify(ipfs[0])
+
 let HPT = tokens
 
 //Set userkeys gebaseerd op de wallet (voor lokaal is het hardcoded)
 let userPublickey = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
 let userPrivateKey = "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"
 
+app.use(cors());
+
 //Start express
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   //WalletId
   const {walletId} = req.query;
 
@@ -59,9 +64,12 @@ app.get('/', (req, res) => {
   contract.stderr.on('data', (data) => console.log(`${data}`));
 
   contract.on('close', () => {
+    //console.log(ipfs[1])
+    
     //Zet in een json file de benodigde data van de smart contract
     res.json({
       result: JSON.parse(information),
+      img: ipfs[1],
       walletId: walletId
     })
   })
@@ -70,8 +78,6 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
-
-
 
 
 

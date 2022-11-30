@@ -100,9 +100,10 @@ export async function createMetadata() {
 
     //Zet diploma img op de ipfs
     let { cid } = await ipfs.add(buffer)
+    let ipfsIMG = imageGateway + cid
 
     //Zet de gegeven data + de ipfs van de diploma img in een json file
-    let metadata = JSON.stringify({ User_Name: name, Cursus_Language: language, Cursus_Title: title, Cursus_Description: description, Cursus_Studytime: studytime, IPFS: imageGateway + cid })
+    let metadata = JSON.stringify({ User_Name: name, Cursus_Language: language, Cursus_Title: title, Cursus_Description: description, Cursus_Studytime: studytime, IPFS: ipfsIMG })
 
     //Zet json file op ipfs
     cid = await ipfs.add(metadata)
@@ -112,9 +113,9 @@ export async function createMetadata() {
     ipfsLink = gateway.concat(cid.path)
 
     //Console log cid info
-    console.info(cid)
+    console.log("Ipfs link: " + ipfsLink, "Ipfs Image: " + ipfsIMG)
 
-    return ipfsLink
+    return [ipfsLink, ipfsIMG]
 }
 
 

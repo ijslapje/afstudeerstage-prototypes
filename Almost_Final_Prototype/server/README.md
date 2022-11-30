@@ -13,7 +13,7 @@ npm i express
 ```
 Vervolgens:
 ```shell
-cd ./smart-contract
+cd smart-contract
 npm install
 npm i --save-dev hardhat
 npm i @openzeppelin/contracts
