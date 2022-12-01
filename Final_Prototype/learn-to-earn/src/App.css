@@ -1,0 +1,133 @@
+#root {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background{
+  position: absolute;
+
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.container{
+  padding-top: 5em;
+
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.portfolio-small{
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  background-color: black;
+  padding: 1em;
+  border-radius: 1em;
+
+  gap: 1em;
+}
+
+.boven{
+  display: flex;
+  flex-direction: row;
+
+  background-color: rgb(28, 28, 28);
+  border-radius: 1em;
+}
+
+.profile-img{
+  align-self: center;
+  padding-left: 1em;
+}
+
+.profile-img img{
+  max-width: 10em;
+}
+
+.stats{
+  padding-right: 1em;
+}
+
+.stats ul{
+  list-style-type: none;
+  text-align: left;
+}
+
+.stats ul li{
+  display: flex;
+  align-items: center;
+}
+
+.box-int{
+  font-size: 3em;
+  margin-right: 1em;
+}
+
+.box-text{
+  font-size: 2em;
+}
+
+.onder{
+  text-align: left;
+  font-size: 2em;
+}
+
+.hpt{
+  max-width: 1.2em;
+  max-height: 1.2em;
+}
+
+.tokens{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px;
+
+  border: 2px solid white;
+  border-radius: 1em;
+}
+
+.tokens p{
+  margin: 0;
+  padding: 2px;
+}
+
+.certificaten{
+  display: flex;
+  flex-direction: column;
+}
+
+.certificaten h2{
+  align-self: flex-start;
+
+  margin-left: 1em;
+}
+
+.NFTs{
+  display: flex;
+  flex-direction: row;
+
+  gap: 3em;
+}
+
+.NFTs img{
+  max-width: 15em;
+  border-radius: 1em;
+}

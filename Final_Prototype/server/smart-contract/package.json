@@ -17,7 +17,7 @@
     "jimp": "^0.16.2"
   },
   "devDependencies": {
-    "hardhat": "^2.12.2"
+    "hardhat": "^2.12.3"
   },
   "directories": {
     "test": "test"

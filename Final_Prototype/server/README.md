@@ -1,6 +1,3 @@
-
-
-
 # Handpicked Learn 2 Earn backend
 
 Executeer de volgende commands om het programma te laten runnen

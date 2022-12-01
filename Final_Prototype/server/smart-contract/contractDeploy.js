@@ -1,3 +1,4 @@
+//Bestand deployed smart contracts
 const ethers = require('ethers');
 const hre = require("hardhat");
 const fs = require('fs');
@@ -37,6 +38,7 @@ async function main() {
         userTokens
     )
 
+    //Zet de tokens om in een leesbaar nummer
     let bigNumber = await TokenContract.balanceOf(userPublicKey);
     bigNumber = bigNumber/1000000000000000000;
     
